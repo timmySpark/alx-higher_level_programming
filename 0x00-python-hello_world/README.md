@@ -1,6 +1,6 @@
 ## PYTHON HELLO WORLD
 
-### This Repository contains tasks and exercises for python beginner's tasks
+ This Repository contains tasks and exercises for python beginner's tasks
 
 ## AREAS COVERED
 
