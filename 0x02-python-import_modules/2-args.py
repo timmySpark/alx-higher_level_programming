@@ -4,7 +4,6 @@
 if __name__ == "__main__":
 
     import sys
- 
     args = sys.argv[1:]
     no_of_args = len(args)
 
