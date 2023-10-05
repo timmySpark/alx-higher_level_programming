@@ -6,6 +6,8 @@
 
 - #### [Python Loops](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x01-python-if_else_loops_functions)
 
+- #### [Python Import Modules](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x02-python-import_modules)
+
 
 ### Author
 - timmySpark
