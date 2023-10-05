@@ -11,7 +11,6 @@ if __name__ == "__main__":
     if no_of_args != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
-    
     op = args[1]
     operators = {"+": add, "-": sub, "*": mul, "/": div}
 
