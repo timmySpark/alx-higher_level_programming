@@ -8,6 +8,9 @@
 
 - #### [Python Import Modules](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x02-python-import_modules)
 
+- #### [Python Data Structures: Lists and Tuples](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x03-python-data_structures)
+
+
 
 ### Author
 - timmySpark
