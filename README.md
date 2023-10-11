@@ -10,6 +10,7 @@
 
 - #### [Python Data Structures: Lists and Tuples](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x03-python-data_structures)
 
+- #### [Python Data Structures: Sets and Dictionaries](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x04-python-more_data_structures)
 
 
 ### Author
