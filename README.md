@@ -12,6 +12,7 @@
 
 - #### [Python Data Structures: Sets and Dictionaries](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x04-python-more_data_structures)
 
+- #### [Python Exceptions](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x05-python-exceptions)
 
 ### Author
 - timmySpark
