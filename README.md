@@ -14,6 +14,8 @@
 
 - #### [Python Exceptions](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x05-python-exceptions)
 
+- #### [Python Classes and Objects](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x06-python-classes)
+
 ### Author
 - timmySpark
 
