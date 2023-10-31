@@ -45,8 +45,7 @@ class Rectangle:
         """Calculates and returns area of rectangle"""
         if self.__height == 0 or self.__width == 0:
             return 0
-        perimeter = 2 * (self.__width + self.__height)
-        return perimeter
+        return (2 * (self.__width + self.__height))
 
     def __str__(self):
         """Returns a printable rectangle"""
