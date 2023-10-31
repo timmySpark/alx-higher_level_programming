@@ -16,6 +16,11 @@
 
 - #### [Python Classes and Objects](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x06-python-classes)
 
+- #### [Python Test Driven Development](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x07-python-test_driven_development)
+
+- #### [Python More Classes and Objects](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x08-python-more_classes)
+
+
 ### Author
 - timmySpark
 
