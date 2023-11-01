@@ -1,0 +1,43 @@
+# Testcases for 4-print_square.py
+
+>>> print_square = __import__('4-print_square').print_square
+
+# Testing with integers > 0
+>>> print_square(2)
+##
+##
+##
+
+# Testing with integers > 0
+>>> print_square(9)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+# Testing with 0
+>>> print_square(0)
+
+# Testing with integers < 0
+>>> print_square(-6)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+# Testing with string
+>>> print_square("6")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+# Testing with float > 0
+>>> print_square(4.4)
+######
+######
+######
+######

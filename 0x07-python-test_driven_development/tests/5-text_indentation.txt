@@ -1,0 +1,70 @@
+# Testcases for 5-text_indentation.txt
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("Hello?")
+Hello?
+<BLANKLINE>
+
+# Test with "."
+>>> text_indentation("hello. world.")
+hello.
+world.
+<BLANKLINE>
+
+# Test with "." and spaces at beginning
+>>> text_indentation("    hello. world.")
+hello.
+world.
+<BLANKLINE>
+
+# Test with "." and spaces after "."
+>>> text_indentation("    hello.     world.")
+hello.
+world.
+<BLANKLINE>
+
+# Test with "."
+>>> text_indentation("hello, world.")
+hello, world.
+<BLANKLINE>
+
+# Test with "." and ":"
+>>> text_indentation("hello, world. my best programming languages are: python. Javascript. Nodejs.")
+hello, world.
+my best programming languages are:
+python.
+Javascript.
+Nodejs.
+
+# Test with non-string characters
+>>> text_indentation(8)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+# Test with "." and ":" and spaces
+>>> text_indentation("hello, world. my best      programming languages are: python. Javascript. Nodejs.")
+hello, world.
+my best      programming languages are:
+python.
+Javascript.
+Nodejs.
+
+# Test with ".", ":", "?"
+>>> text_indentation("hello, world. my best      programming languages are: python. Javascript. Nodejs. How's my choice?")
+hello, world.
+my best      programming languages are:
+python.
+Javascript.
+Nodejs.
+How's my choice?
+
+# Test with ".", ":", "?" with spaces
+>>> text_indentation("hello, world. my best      programming languages are: python. Javascript. Nodejs. How's my choice? Good right.")
+hello, world.
+my best      programming languages are:
+python.
+Javascript.
+Nodejs.
+How's my choice?
+Good right.
