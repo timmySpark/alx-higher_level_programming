@@ -4,37 +4,52 @@
 >>> text_indentation("Hello?")
 Hello?
 <BLANKLINE>
+<BLANKLINE>
 
 # Test with "."
 >>> text_indentation("hello. world.")
 hello.
+<BLANKLINE>
 world.
+<BLANKLINE>
 <BLANKLINE>
 
 # Test with "." and spaces at beginning
 >>> text_indentation("    hello. world.")
 hello.
+<BLANKLINE>
 world.
+<BLANKLINE>
 <BLANKLINE>
 
 # Test with "." and spaces after "."
 >>> text_indentation("    hello.     world.")
 hello.
+<BLANKLINE>
 world.
+<BLANKLINE>
 <BLANKLINE>
 
 # Test with "."
 >>> text_indentation("hello, world.")
 hello, world.
 <BLANKLINE>
+<BLANKLINE>
 
 # Test with "." and ":"
 >>> text_indentation("hello, world. my best programming languages are: python. Javascript. Nodejs.")
 hello, world.
+<BLANKLINE>
 my best programming languages are:
+<BLANKLINE>
 python.
+<BLANKLINE>
 Javascript.
+<BLANKLINE>
 Nodejs.
+<BLANKLINE>
+<BLANKLINE>
+
 
 # Test with non-string characters
 >>> text_indentation(8)
@@ -45,26 +60,48 @@ TypeError: text must be a string
 # Test with "." and ":" and spaces
 >>> text_indentation("hello, world. my best      programming languages are: python. Javascript. Nodejs.")
 hello, world.
+<BLANKLINE>
 my best      programming languages are:
+<BLANKLINE>
 python.
+<BLANKLINE>
 Javascript.
+<BLANKLINE>
 Nodejs.
+<BLANKLINE>
+<BLANKLINE>
 
 # Test with ".", ":", "?"
 >>> text_indentation("hello, world. my best      programming languages are: python. Javascript. Nodejs. How's my choice?")
 hello, world.
+<BLANKLINE>
 my best      programming languages are:
+<BLANKLINE>
 python.
+<BLANKLINE>
 Javascript.
+<BLANKLINE>
 Nodejs.
+<BLANKLINE>
 How's my choice?
+<BLANKLINE>
+<BLANKLINE>
+
 
 # Test with ".", ":", "?" with spaces
 >>> text_indentation("hello, world. my best      programming languages are: python. Javascript. Nodejs. How's my choice? Good right.")
 hello, world.
+<BLANKLINE>
 my best      programming languages are:
+<BLANKLINE>
 python.
+<BLANKLINE>
 Javascript.
+<BLANKLINE>
 Nodejs.
+<BLANKLINE>
 How's my choice?
+<BLANKLINE>
 Good right.
+<BLANKLINE>
+<BLANKLINE>

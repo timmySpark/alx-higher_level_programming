@@ -11,10 +11,10 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     text = text.strip()
     tokens = ".?:"
-    count = 1
+    count = 0
     for i in range(0, len(text)):
         if text[i] in tokens:
             print(text[count:i + 1].strip())
             print()
-            count += 1
+            count = i + 1
     print(text[count:].strip())
