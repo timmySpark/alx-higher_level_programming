@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Addition Module"""
+"""Addition Module"""
 
 
 def add_integer(a, b=98):
-    """ Function that add two integers/values
+    """Function that add two integers/values
     >>> add(2)
     100
     >>> add(2, 5)
@@ -13,4 +13,4 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if not isinstance(b, int) and not isinstance(b, float):
         raise TypeError("b must be an integer")
-    return(int(a + b))
+    return int(a + b)
