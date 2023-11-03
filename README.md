@@ -22,7 +22,6 @@
 
 - #### [Python  Objects](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x09-python-everything_is_object)
 
-- #### [Python Hash Tables](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x1A-hash_tables)
 
 ### Author
 - timmySpark
