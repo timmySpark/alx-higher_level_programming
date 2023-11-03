@@ -10,7 +10,7 @@ max_integer = __import__('6-max_integer').max_integer
 class TestMaxInteger(unittest.TestCase):
     """Define unittests for max_integer([..])."""
 
-    def tests(self):
+    def setUp(self):
         self.empty_list = []
         self.order_list = [1, 2, 3, 4]
         self.unordered_list = [4, 3, 2, 1]
@@ -21,16 +21,11 @@ class TestMaxInteger(unittest.TestCase):
         self.floats = [2.3, 4.5, 5.5, 6.7]
         self.mixup = [1, 3.3, 5.5, 6, 10]
         self.string = "Dylan"
-        self.list_strings = ["Dylan", "is", "a", "dude"]
-        self.empty_str = [""]
+        self.list_strings = ["Tyler", "is", "a", "dude"]
 
     def test_empty_list(self):
         """Test an Empty list"""
         self.assertEqual(max_integer(self.empty_list), None)
-
-    def test_empty_str(self):
-        """Test an Empty list of string"""
-        self.assertEqual(max_integer(self.empty_str), None)
 
     def test_ordered_list(self):
         """Test an ordered list of integers"""
@@ -70,8 +65,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_strings(self):
         """Test for the highest string (max)"""
-        self.assertEqual(max_integer(self.list_strings), "Dylan")
-
+        self.assertEqual(max_integer(self.list_strings), "is")
 
 if __name__ == "__main__":
     unittest.main()
