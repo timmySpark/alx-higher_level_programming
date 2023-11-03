@@ -7,5 +7,3 @@ def lazy_matrix_mul(m_a, m_b):
     """Function that performs matrix multiplication of m_a and m_b"""
 
     return (np.matmul(m_a, m_b))
-
-
