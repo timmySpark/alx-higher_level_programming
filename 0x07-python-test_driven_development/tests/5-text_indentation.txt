@@ -4,7 +4,7 @@
 >>> text_indentation("Hello?")
 Hello?
 <BLANKLINE>
-<BLANKLINE>
+
 
 # Test with "."
 >>> text_indentation("hello. world.")
@@ -12,7 +12,7 @@ hello.
 <BLANKLINE>
 world.
 <BLANKLINE>
-<BLANKLINE>
+
 
 # Test with "." and spaces at beginning
 >>> text_indentation("    hello. world.")
@@ -20,7 +20,7 @@ hello.
 <BLANKLINE>
 world.
 <BLANKLINE>
-<BLANKLINE>
+
 
 # Test with "." and spaces after "."
 >>> text_indentation("    hello.     world.")
@@ -28,12 +28,11 @@ hello.
 <BLANKLINE>
 world.
 <BLANKLINE>
-<BLANKLINE>
+
 
 # Test with "."
 >>> text_indentation("hello, world.")
 hello, world.
-<BLANKLINE>
 <BLANKLINE>
 
 # Test with "." and ":"
@@ -48,7 +47,7 @@ Javascript.
 <BLANKLINE>
 Nodejs.
 <BLANKLINE>
-<BLANKLINE>
+
 
 
 # Test with non-string characters
@@ -69,7 +68,7 @@ Javascript.
 <BLANKLINE>
 Nodejs.
 <BLANKLINE>
-<BLANKLINE>
+
 
 # Test with ".", ":", "?"
 >>> text_indentation("hello, world. my best      programming languages are: python. Javascript. Nodejs. How's my choice?")
@@ -85,7 +84,7 @@ Nodejs.
 <BLANKLINE>
 How's my choice?
 <BLANKLINE>
-<BLANKLINE>
+
 
 
 # Test with ".", ":", "?" with spaces
@@ -104,4 +103,4 @@ How's my choice?
 <BLANKLINE>
 Good right.
 <BLANKLINE>
-<BLANKLINE>
+
