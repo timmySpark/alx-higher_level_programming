@@ -22,6 +22,8 @@
 
 - #### [Python  Objects](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x09-python-everything_is_object)
 
+- #### [Python Inheritance](https://github.com/timmySpark/alx-higher_level_programming/tree/master/0x0A-python-inheritance)
+
 
 ### Author
 - timmySpark
