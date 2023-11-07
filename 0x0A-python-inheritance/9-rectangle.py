@@ -19,9 +19,9 @@ class Rectangle(BaseGeometry):
         super().integer_validator("height", height)
         self.__height = height
 
-    def area():
+    def area(self):
         """ find the area of a rectangle """
         return (self.__width * self.__height)
 
-    def __str__():
-        return (f'[{self.__class__.__name__}] {self.__width}/{self.height}')
+    def __str__(self):
+        return (f'[{self.__class__.__name__}] {self.__width}/{self.__height}')
