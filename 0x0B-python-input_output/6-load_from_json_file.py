@@ -4,7 +4,7 @@
 import json
 
 
-def load_from_json_file(my_obj, filename):
+def load_from_json_file(filename):
     """Create a Python object from a JSON file."""
     with open(filename, "w") as fd:
         return json.loads(fd)
