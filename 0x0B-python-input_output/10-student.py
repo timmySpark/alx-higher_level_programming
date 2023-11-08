@@ -17,10 +17,10 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
+    def to_json(self, attrs=None):
         """ retrieves dictionary representation of a student"""
         if isinstance(attrs, list):
-            result = \
-                    {value: getattr(self, value) for value in attrs if hasattr(self, value)}
+            result = {value: getattr(self, value) for value in attrs
+                      if hasattr(self, value)}
             return result
         return self.__dict__
