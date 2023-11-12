@@ -88,6 +88,18 @@ class Rectangle(Base):
             [print("#", end="") for w in range(self.width)]
             print("")
 
+    def update(self, *args, **kwargs):
+        """ assigns arguments to each attributes"""
+        attributes = ["id", "width", "height", "x", "y"]
+
+        if args:
+            for i in range(len(args)):
+                setattr(self, attributes[i], args[i])
+        if kwargs:
+            for (key, value) in kwargs.items():
+                if key in attributes:
+                    setattr(self, key, value)
+
     def __str__(self):
         """ Return the string representation """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
