@@ -1,9 +1,8 @@
 #!/usr/bin/python3
+""" Representing a base model"""
 import json
 import csv
 import turtle
-
-""" Representing a base model"""
 
 
 class Base:
