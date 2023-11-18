@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 """ Unittests for base.py """
+
+
 import os
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
+
 
 class TestBase_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Base class."""
@@ -30,7 +33,7 @@ class TestBase_instantiation(unittest.TestCase):
 
     def test_nb_instances_after_unique_id(self):
         b1 = Base()
-                b2 = Base(12)
+        b2 = Base(12)
         b3 = Base()
         self.assertEqual(b1.id, b3.id - 1)
 
@@ -279,6 +282,7 @@ class TestBase_create(unittest.TestCase):
         r1_dictionary = r1.to_dictionary()
         r2 = Rectangle.create(**r1_dictionary)
         self.assertEqual("[Rectangle] (7) 1/2 - 3/5", str(r1))
+
     def test_create_rectangle_new(self):
         r1 = Rectangle(3, 5, 1, 2, 7)
         r1_dictionary = r1.to_dictionary()
@@ -530,6 +534,7 @@ class TestBase_load_from_file_csv(unittest.TestCase):
     def test_load_from_file_csv_more_than_one_arg(self):
         with self.assertRaises(TypeError):
             Base.load_from_file_csv([], 1)
+
 
 if __name__ == "__main__":
     unittest.main()
