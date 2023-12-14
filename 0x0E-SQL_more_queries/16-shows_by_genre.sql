@@ -3,9 +3,9 @@
 
 SELECT s.title, g.name
     FROM tv_shows AS s
-        LEFT JOIN tv_show_genres as ts
+        LEFT JOIN tv_show_genres AS ts
         ON s.id = ts.show_id
 
-        LEFT JOIN tv_genres as g
+        LEFT JOIN tv_genres AS g
         ON g.id = ts.genre_id
     ORDER BY s.title;
