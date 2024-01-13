@@ -7,15 +7,16 @@
 from sys import argv
 import MySQLdb
 
-conn = MySQLdb.connect(
-        host='localhost',
-        port=3306,
-        user=argv[1],
-        passwd=argv[2],
-        db=argv[3]
-    )
-curr = conn.cursor()
-curr.execute("select * FROM states")
-[print(state) for state in curr.fetchall()]
-curr.close()
-conn.close()
+if __name__ == "__main__":
+    conn = MySQLdb.connect(
+            host='localhost',
+            port=3306,
+            user=argv[1],
+            passwd=argv[2],
+            db=argv[3]
+        )
+    curr = conn.cursor()
+    curr.execute("select * FROM states")
+    [print(state) for state in curr.fetchall()]
+    curr.close()
+    conn.close()
