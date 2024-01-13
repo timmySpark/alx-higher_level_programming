@@ -4,8 +4,8 @@
 #                             <mysql password> \
 #                             <database name>
 
-from sys import argv
 import MySQLdb
+from sys import argv
 
 if __name__ == "__main__":
     conn = MySQLdb.connect(
@@ -20,5 +20,3 @@ if __name__ == "__main__":
     curr = conn.cursor()
     curr.execute("SELECT * FROM states ORDER BY id")
     [print(state) for state in curr.fetchall()]
-    curr.close()
-    conn.close()
