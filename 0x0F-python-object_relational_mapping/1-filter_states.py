@@ -17,7 +17,6 @@ if __name__ == '__main__':
         charset='utf8'
     )
 
-
     curr = conn.cursor()
     query = '''
         SELECT * FROM states
