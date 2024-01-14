@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-'''Script that lists all states from the database hbtn_0e_0_usa
-where name stasta from N'''
+'''
+    Script that lists all states from the database hbtn_0e_0_usa
+    where name starts from N(Uppercase)
+'''
 
 import MySQLdb
 from sys import argv
@@ -15,6 +17,7 @@ if __name__ == '__main__':
         charset='utf8'
     )
 
+
     curr = conn.cursor()
     query = '''
         SELECT * FROM states
@@ -22,7 +25,9 @@ if __name__ == '__main__':
         ORDER BY id ASC
         '''
     curr.execute(query)
-    for state in curr.fetchall():
-        print(state)
+
+    for row in curr.fetchall():
+        print(row)
+
     curr.close()
     conn.close()
