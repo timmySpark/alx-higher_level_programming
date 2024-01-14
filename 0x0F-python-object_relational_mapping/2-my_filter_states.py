@@ -18,7 +18,7 @@ if __name__ == '__main__':
     curr = conn.cursor()
     query = '''
         SELECT * FROM states
-        WHERE name='{}'
+        WHERE name = '{}'
         ORDER BY id ASC
         '''.format(argv[4])
     curr.execute(query)

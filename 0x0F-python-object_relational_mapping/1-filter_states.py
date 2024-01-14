@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-'''Script that lists all states from the database hbtn_0e_0_usa'''
+'''Script that lists all states from the database hbtn_0e_0_usa
+where name stasta from N'''
 
 import MySQLdb
 from sys import argv
@@ -15,8 +16,13 @@ if __name__ == '__main__':
     )
 
     curr = conn.cursor()
-    query = "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC"
+    query = '''
+        SELECT * FROM states
+        WHERE name LIKE 'N%'
+        ORDER BY id ASC
+        '''
     curr.execute(query)
-    [print(state) for state in curr.fetchall()]
+    for state in curr.fetchall():
+        print(state)
     curr.close()
     conn.close()
